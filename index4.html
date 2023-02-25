@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Mini-Project 2:  Design Invoice using Table</title>
+        
+         <style>
+            table{
+                width: 600px;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            table, td, th{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+                line-height: 1.3;
+            }
+
+            .label{
+                font-weight: 600;
+                
+            }
+
+            .firstrow{
+                background-color: lightskyblue;
+            }
+
+            .secondrow{
+                background-color: lightskyblue;
+            }
+
+            #one{
+                background-color: lightskyblue;
+            }
+
+            #two{
+                background-color: lightskyblue;
+            }
+
+            #three{
+                background-color: lightskyblue;
+            }
+         </style>
+    
+    <body>
+        <table>
+            <tr class="firstrow">
+                <th colspan="3">
+                    Invoice #12345ABC
+                </th>
+                <th> 26 February 2023</th>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <span class="label">Pay To:</span><br>
+                    Old Hostel<br>
+                    VIT BHOPAL, MP-466114
+                </td>
+
+                <td colspan="2" >
+                    <span class="label">Customer:</span><br>
+                    Sudhanshu Ranjan<br>
+                    Shiv Shakti Path<br>
+                    Street No.3<br>
+                    Mahaver Nagar, Patna
+                </td>
+            </tr>
+
+            <tr class="secondrow">
+                <th>Name/Description</th>
+                <th>Qty.</th>
+                <th>MRP</th>
+                <th>Amount</th>
+            </tr>
+
+            <tr>
+                <td>Biryani</td>
+                <td>5</td>
+                <td>350</td>
+                <td>1750</td>
+                
+            </tr>
+
+            <tr>
+                <td>Chocolate Shake</td>
+                <td>5</td>
+                <td>180</td>
+                <td>900</td>
+                
+            </tr>
+
+            <tr>
+                <td id="one" colspan="3">Subtotal:</td>
+                <td>2650</td>
+            </tr>
+
+            <tr>
+                <td id="two" colspan="2">Tax</td>
+                <td>10%</td>
+                <td>265</td>
+            </tr>
+
+            <tr>
+                <td id="three" colspan="3">Grand Total:</td>
+                <td>₹ 2385</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
